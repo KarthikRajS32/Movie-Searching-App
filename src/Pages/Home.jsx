@@ -26,18 +26,18 @@ const Home = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-10 items-center text-center">
       <form onSubmit={searchMovies} className="mb-4">
         <input
           type="text"
-          className="border p-2 w-full"
+          className="border p-2 "
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search for a movie..."
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white p-2 mt-2 w-full"
+          className="bg-blue-400 text-white p-2 mt-2 hover:bg-blue-600"
         >
           Search
         </button>
